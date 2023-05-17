@@ -1,20 +1,40 @@
 {
-  "name": "fudge",
   "title": "Fudge",
   "description": "Fudge your dice rolls!",
-  "author": "troygoode",
-  "url": "https://github.com/troygoode/fvtt-fudge",
-  "manifest": "https://raw.githubusercontent.com/troygoode/fvtt-fudge/main/module.json",
-  "download": "https://github.com/troygoode/fvtt-fudge/archive/v1.1.1.zip",
-  "version": "1.1.1",
-  "minimumCoreVersion": "0.7.0",
-  "compatibleCoreVersion": "0.7.9",
-  "esmodules": ["modules/hooks.js"],
+  "version": "1.1.2",
+  "esmodules": [
+    "modules/hooks.js"
+  ],
+  "socket": true,
+  "url": "https://github.com/martinberlanda/fvtt-fudge",
+  "manifest": "https://raw.githubusercontent.com/martinberlanda/fvtt-fudge/main/module.json",
+  "download": "https://github.com/martinberlanda/fvtt-fudge/archive/v1.1.2.zip",
+  "id": "fudge",
+  "authors": [
+    {
+      "name": "troygoode",
+      "url": "https://github.com/troygoode",
+      "flags": {}
+    },
+    {
+      "name": "martinberlanda",
+      "url": "https://github.com/martinberlanda",
+      "flags": {}
+    }
+  ],
+  "compatibility": {
+    "minimum": "10",
+    "verified": "10"
+  },
   "languages": [
     {
       "lang": "en",
       "name": "English",
-      "path": "lang/en.json"
+      "path": "lang/en.json",
+      "flags": {}
     }
-]
+  ],
+  "flags": {
+    "allowBugReporter": true
+  }
 }

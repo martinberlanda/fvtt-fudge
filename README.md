@@ -4,14 +4,10 @@ Fudge your dice rolls! Adds a new dice roll tool to the tokens toolbar. Click th
 
 ## Installation
 
-Install directly from within [Foundry VTT's package browser](https://foundryvtt.com/packages/fudge/):
-
-https://foundryvtt.com/packages/fudge/
-
-Or, install manually with [this Manifest URL](https://raw.githubusercontent.com/troygoode/fvtt-fudge/main/module.json):
+Install manually with [this Manifest URL](https://raw.githubusercontent.com/martinberlanda/fvtt-fudge/main/module.json):
 
 ```
-https://raw.githubusercontent.com/troygoode/fvtt-fudge/main/module.json
+https://raw.githubusercontent.com/martinberlanda/fvtt-fudge/main/module.json
 ```
 
 ## Demos

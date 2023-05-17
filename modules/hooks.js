@@ -96,7 +96,7 @@ const onSubmit = async (doc) => {
   }
 
   try {
-    new Roll(formula).roll();
+    await new Roll(formula).roll({async: true});
   } catch (e) {
     console.error(e);
     return whisperError("Invalid Formula");
@@ -104,7 +104,7 @@ const onSubmit = async (doc) => {
 
   for (let i = 0; i < MAX_ATTEMPTS; i++) {
     const dice = new Roll(formula);
-    const r = dice.roll();
+    const r = await dice.roll({async: true});
     const total = r.total;
     if (evaluateTotalVsTarget(total, target)) {
       r.toMessage({
@@ -112,7 +112,7 @@ const onSubmit = async (doc) => {
       }, {
         rollMode: "roll"
       });
-      console.log(`Foundry VTT | Fudge | Fudged in ${i+1} attempts.`);
+      //console.log(`Foundry VTT | Fudge | Fudged in ${i + 1} attempts.`);
       return;
     }
   }
@@ -141,7 +141,6 @@ const showDialog = async () => {
     }).render(true);
   });
 }
-
 Hooks.on("getSceneControlButtons", (controls) => {
   if (!game.user.isGM) {
     return;
