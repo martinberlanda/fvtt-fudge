@@ -8,7 +8,7 @@
   "socket": true,
   "url": "https://github.com/martinberlanda/fvtt-fudge",
   "manifest": "https://raw.githubusercontent.com/martinberlanda/fvtt-fudge/main/module.json",
-  "download": "https://github.com/martinberlanda/fvtt-fudge/archive/v1.1.2.zip",
+  "download": "https://github.com/martinberlanda/fvtt-fudge/releases/download/v1.1.2/module.zip",
   "id": "fudge",
   "authors": [
     {
