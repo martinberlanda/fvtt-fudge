@@ -1,7 +1,7 @@
 {
   "title": "Fudge",
   "description": "Fudge your dice rolls!",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "esmodules": [
     "modules/hooks.js"
   ],
@@ -24,7 +24,7 @@
   ],
   "compatibility": {
     "minimum": "10",
-    "verified": "10"
+    "verified": "11"
   },
   "languages": [
     {
